@@ -17,9 +17,12 @@ const button = document.querySelector("button");
 const body = document.querySelector("body");
 const colors = ["red", "blue", "gray", "black", "yellow"];
 
+//set color body default start
 body.style.backgroundColor = "green";
+//add event button
 button.addEventListener("click", changeBgColor);
 
+//functie button
 function changeBgColor() {
   // text.style.backgroundColor = "blue";
   const colorIndex = parseInt(Math.random() * colors.length);
