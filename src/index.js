@@ -9,11 +9,19 @@ import "./styles.css";
 </div>
 `;*/
 
-const button = document.getElementById("changeColorButton");
-const text = document.getElementById("ChangeColorText");
+// const button = document.getElementById("changeColorButton");
+// const text = document.getElementById("ChangeColorText");
+/* update code */
+//change background body
+const button = document.querySelector("button");
+const body = document.querySelector("body");
+const colors = ["red", "blue", "gray", "black", "yellow"];
 
+body.style.backgroundColor = "green";
 button.addEventListener("click", changeBgColor);
 
 function changeBgColor() {
-  text.style.backgroundColor = "blue";
+  // text.style.backgroundColor = "blue";
+  const colorIndex = parseInt(Math.random() * colors.length);
+  body.style.backgroundColor = colors[colorIndex];
 }
